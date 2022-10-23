@@ -9,7 +9,7 @@ public class SQRService {
         if (minValue > maxValue) { return -1;}
 
         for (int i = 10 ; i < 100 ; i++){
-            if (((i*i) > minValue) & ((i*i) < maxValue)) { mySqrCounts++;}
+            if (((i*i) >= minValue) & ((i*i) <= maxValue)) { mySqrCounts++;}
         }
         return mySqrCounts;
     }
